@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width:400px;
+         
+            height: 300px;
+            margin-top: 10%;
+            background-color: #fff;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+        }
+        .loginpage{
+
+            padding: 40px;
+        }
+
+        label{
+
+            text-align: left;
+            margin-bottom: 5px;
+            color: grey;
+        }
+
+        input{
+            width: 100%;
+           border: 0;
+           border-bottom: 1px solid;
+            margin-bottom: 25px;
+            outline: none;
+            background: transparent;
+        }
+        input:focus ~ label,
+         input:valid ~ label {
+
+              font-size: 12px;
+              color: #1e87f0;
+  }
+
+        h1{
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        button{
+            padding: 9px;
+            color: #fff;
+            background-color:#2f82d4;
+            border: 0;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+     input:focus,
+  input:valid {
+    border-color: #1e87f0;
+  }
+  
+        button:hover {
+    background-color: #1472c4;
+  }
+
+
+    </style>
+
+
+</head>
+<body>
+       <div class="container">
+        <div class="loginpage">
+            <h1>Login</h1>
+            <form action="" method="get">
+    
+                <label for="name">Username</label>
+                <input type="text" id="name" name=""required="">
+                <label for="password">password</label>
+                <input type="password" name="" id="pass" required="">
+    
+                <button type="submit">submit</button>
+            </form>
+        </div>
+          
+       </div> 
+       <!-- git is used here-->
+</body>
+</html>
